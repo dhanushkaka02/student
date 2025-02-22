@@ -9,7 +9,6 @@ import java.util.List;
 
 @Repository
 public interface StudentRepo extends JpaRepository<Student, Long> {
-    @Query(value = "select s from student s where s.name =?1")
-    public Student findByName(String name);
-
+    Student findByName(String name);
 }
+

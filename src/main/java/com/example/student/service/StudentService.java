@@ -16,6 +16,10 @@ public class StudentService {
     {
         return studentRepo.findByName(name);
     } 
-
+    public String save(Student student)
+    {
+        studentRepo.save(student);
+        return "saved succesfully"+student.getName();
+    }
 
 }

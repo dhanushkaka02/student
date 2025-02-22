@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-generates ID
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long studId;
 
     private String name;
